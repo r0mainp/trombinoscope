@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutube</title>
+    <link rel="icon" type="image/png" href="img/Logo.svg" />
+    <script src="https://kit.fontawesome.com/395d2606a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="profil__header">
+        <div class="profil__header-container">
+            <img src="img/logo.svg" alt="Logo Tutube" class="logo">
+            <div class="search-input__container">
+                <i class="fas fa-search"></i>
+                <input type="text" class="profil__header-search" placeholder="rechercher">
+            </div>
+        </div>
+        <nav class="profil__header-nav">
+            <a href="" class="header__nav-link active"><i class="fas fa-home"></i></a>
+            <a href="" class="header__nav-link"><i class="fas fa-video"></i></a>
+            <a href="" class="header__nav-link"><i class="fas fa-users"></i></a>
+            <a href="" class="header__nav-link notif"><i class="fas fa-bell"></i></a>
+        </nav>
+    </header>
+    <div class="page__profil">
+    <h1 class="profil__title">Modifier mon profil</h1>
+    <form class="form__container profil__form">
+        <section class="form__connexion">
+            <label for="nom" class="form__label-text">Nom :</label>
+            <input type="text" id="nom" class="form__input-style" placeholder="Nom"  value="Portier" disabled>
+
+            <label for="prenom" class="form__label-text">Prénom :</label>
+            <input type="text" id="prenom" class="form__input-style" placeholder="Prénom" value="Romain" disabled>
+
+            <label for="mail" class="form__label-text">Adresse e-mail :</label>
+            <input type="email" id="mail" class="form__input-style" value="lol@lol.com" placeholder="Email"
+                pattern="[A-Za-z0-9\._-]+@[A-Za-z0-9]+\.[A-Za-z]{2,4}" required>
+
+            <label for="password" class="form__label-text">Mot de passe :</label>
+            <input type="password" id="password" class="form__input-style" placeholder="Mot de passe" required>
+
+            <label for="password" class="form__label-text">Confirmation du mot de passe :</label>
+            <input type="password" id="password-confirm" class="form__input-style"
+                placeholder="Retapez votre mot de passe." required>
+
+
+            <label for="number" class="form__label-text">Numéro de téléphone :</label>
+
+            <div class="form__phone-number-container">
+                <select name="day" id="birth-day" class="form__input-style form__input-style--list-day" required>
+                    <option value="+33">+33</option>
+                    <option value="+44">+44</option>
+                    <option value="+55">+55</option>
+                </select>
+                <input type="text" id="number" class="form__input-style" placeholder="Numéro de téléphone"
+                    pattern="[0-9]+{4,14}" value="6 66 66 66 66" required></div>
+
+            <label for="number" class="form__label-text">Votre chiffre préféré :</label>
+            <input id="number" type="number" placeholder="Chiffre préféré" min="1" max="9" class="form__input-style" value="3"/>
+
+            <label for="birth-day" class="form__label-text">Date de naissance</label>
+            <div class="list-option__container">
+                <select name="day" id="birth-day" class="form__input-style form__input-style--list-day" required>
+                    <option value="">30</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month" id="birth-month" class="form__input-style form__input-style--list-month"
+                    placeholder="Test" required>
+                    <option value="">Juin</option>
+                    <option value="Janvier">Janvier</option>
+                    <option value="Février">Février</option>
+                    <option value="Mars">Mars</option>
+                    <option value="Avril">Avril</option>
+                    <option value="Mai">Mai</option>
+                    <option value="Juin">Juin</option>
+                    <option value="Juillet">Juillet</option>
+                    <option value="Aout">Aout</option>
+                    <option value="Septembre">Septembre</option>
+                    <option value="Octobre">Octobre</option>
+                    <option value="Novembre">Novembre</option>
+                    <option value="Décembre">Décembre</option>
+
+                </select>
+                <select name="year" id="birth-year" class="form__input-style form__input-style--list-month" required>
+                    <option value="">1992</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="etc">etc</option>
+                </select>
+            </div>
+
+            <p class="form__label-text">Moyen de contact préféré</p>
+            <div class="form__radio-group">
+                <div class="form__radio-container"><input type="radio" id="email" value="E-mail" class="form__radio"
+                        name="contact" checked><label for="email">E-mail</label></div>
+                <div class="form__radio-container"><input type="radio" id="sms" value="SMS" class="form__radio"
+                        name="contact"><label for="sms">SMS</label></div>
+                <div class="form__radio-container"><input type="radio" id="courrier" value="Courrier"
+                        class="form__radio" name="contact"><label for="courrier">Courrier</label></div>
+            </div>
+
+            <label for="color-choice" class="form__label-text">Couleur préférée :</label>
+            <input type="color" id="color-choice" name="color-choice" class="form__input-style--color" value="#1877F2" required>
+
+            
+            <label for="avatar" class="form__label-text">Photo de profil :</label>
+            <div class="form__profil-pic-container">
+                <img src="img/blank-profile-picture-973460_640.png" alt="Photo de profil" class="form__profile-pic">
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"
+                class="form__input-style form__input-style--file">
+            </div>
+
+            <input type="submit" value="Valider les modification" class="btn btn__submit">
+        </section>
+    </form>
+</div>
+
+    <footer class="footer">
+        <p class="footer__text">Trombinoscope &#169; 2020</p>
+    </footer>
+</body>
+
+</html>
